@@ -1,0 +1,33 @@
+{
+  "name": "json-to-py",
+  "version": "1.0.0",
+  "description": "Generate Python TypedDict classes from JSON data.",
+  "main": "index.js",
+  "bin": {
+    "json-to-py": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bipproduction/json-to-py.git"
+  },
+  "keywords": [
+    "json",
+    "python",
+    "typedict",
+    "generator"
+  ],
+  "author": "Malik Kurosaki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bipproduction/json-to-py/issues"
+  },
+  "homepage": "https://github.com/bipproduction/json-to-py#readme",
+  "dependencies": {
+    "yargs": "^17.4.0",
+    "lodash": "^4.17.21"
+  }
+}
