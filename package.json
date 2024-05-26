@@ -1,6 +1,6 @@
 {
   "name": "json-to-py",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate Python TypedDict classes from JSON data.",
   "main": "index.js",
   "bin": {

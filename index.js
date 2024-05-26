@@ -34,7 +34,9 @@ yargs
         argv => {
             const json = JSON.parse(fs.readFileSync(argv.json, "utf8"));
             const text_string = jsonToTypeDict(json, argv.name);
-            fs.writeFileSync(argv.output.includes(".py") ? argv.output : argv.output + ".py", text_string);
+            const fileName = argv.output.includes(".py") ? argv.output : argv.output + ".py";
+            fs.writeFileSync(fileName, text_string);
+            console.log("Done writing to " + fileName);
         }
     )
     .demandCommand(1)
